@@ -1,13 +1,13 @@
-package ai.ripple.NotificationService;
+package ai.ripple.Notifications;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class NotificationServiceApplication {
+public class NotificationsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(NotificationServiceApplication.class, args);
+		SpringApplication.run(NotificationsApplication.class, args);
 	}
 
 }

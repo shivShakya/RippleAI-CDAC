@@ -28,6 +28,10 @@ public class GatewayConfig {
 	                .route("user_service", r -> r.path("/auth/**")
 	                        .filters(f -> f.filter(jwtRoleFilter))
 	                        .uri("lb://USERSERVICE"))
+					.route("notification_service", r -> r.path("/notification/**")
+							.filters(f -> f.filter(jwtRoleFilter))
+							.uri("lb://NOTIFICATIONSERVICE"))
+
 	                .build();
 	    }
 }

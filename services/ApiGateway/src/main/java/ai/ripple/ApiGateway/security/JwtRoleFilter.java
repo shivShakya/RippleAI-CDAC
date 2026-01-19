@@ -38,7 +38,7 @@ public class JwtRoleFilter implements GatewayFilter {
         System.out.println("[Gateway] Incoming request path: " + path);
 
         // Allow register/login without JWT
-        if (path.startsWith("/auth/register") || path.startsWith("/auth/login")) {
+        if (path.startsWith("/auth/register") || path.startsWith("/auth/login") || path.startsWith("/notification/")) {
             System.out.println("[Gateway] Skipping JWT check for path: " + path);
             return chain.filter(exchange);
         }

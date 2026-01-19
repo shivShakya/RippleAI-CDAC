@@ -1,10 +1,10 @@
-package ai.ripple.NotificationService;
+package ai.ripple.Notifications;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class NotificationServiceApplicationTests {
+class NotificationsApplicationTests {
 
 	@Test
 	void contextLoads() {
